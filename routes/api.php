@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\VersesController;
+use GuzzleHttp\Psr7\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::get("/status", function(Request $request) {
+    return response()->json(['message' => "Server on"]);
 });
+
+Route::get("/verses/{bookRef}/{chapter}", [VersesController::class, "index"]);
