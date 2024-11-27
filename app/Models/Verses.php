@@ -28,4 +28,16 @@ class Verses extends Model
     {
         return $this->belongsTo(Versions::class);
     }
+
+    public function getVerses(int $bookId, int $versionId, int $chapter, ?int $verse)
+    {
+        return $this->select('book_id', 'chapter', 'verse', 'text')
+            ->where('book_id', $bookId)
+            ->where('version_id', $versionId)
+            ->where('chapter', $chapter)
+            ->when($verse, function ($query, $verse) {
+                return $query->where('verse', $verse);
+            })
+            ->get();
+    }
 }

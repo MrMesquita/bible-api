@@ -17,4 +17,9 @@ class Versions extends Model
     {
         return $this->hasMany(Verses::class);
     }
+
+    public function getTranslationName(int $versionId): ?string
+    {
+        return $this->where('id', $versionId)->value('name');
+    }
 }

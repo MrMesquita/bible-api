@@ -1,0 +1,73 @@
+/*
+SQLyog Ultimate v12.5.1 (64 bit)
+MySQL - 8.0.23 
+*********************************************************************
+*/
+/*!40101 SET NAMES utf8 */;
+
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('1','1','1','Gênesis','gn','50');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('2','1','2','Êxodo','ex','40');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('3','1','3','Levítico','lv','27');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('4','1','4','Números','nm','36');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('5','1','5','Deuteronômio','dt','34');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('6','1','6','Josué','js','24');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('7','1','7','Juízes','jz','21');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('8','1','8','Rute','rt','4');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('9','1','9','I Samuel','1sm','31');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('10','1','10','II Samuel','2sm','24');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('11','1','11','I Reis','1rs','22');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('12','1','12','II Reis','2rs','25');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('13','1','13','I Crônicas','1cr','29');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('14','1','14','II Crônicas','2cr','36');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('15','1','15','Esdras','ed','10');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('16','1','16','Neemias','ne','13');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('17','1','17','Ester','et','10');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('18','1','18','Jó','jó','42');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('19','1','19','Salmos','sl','127');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('20','1','20','Provérbios','pv','31');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('21','1','21','Eclesiastes','ec','12');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('22','1','22','Cântico dos Cânticos','ct','8');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('23','1','23','Isaías','is','66');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('24','1','24','Jeremias','jr','52');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('25','1','25','Lamentações de Jeremias','lm','5');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('26','1','26','Ezequiel','ez','48');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('27','1','27','Daniel','dn','12');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('28','1','28','Oséias','os','14');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('29','1','29','Joel','jl','3');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('30','1','30','Amós','am','9');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('31','1','31','Obadias','ob','1');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('32','1','32','Jonas','jn','4');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('33','1','33','Miquéias','mq','7');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('34','1','34','Naum','na','3');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('35','1','35','Habacuque','hc','3');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('36','1','36','Sofonias','sf','3');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('37','1','37','Ageu','ag','2');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('38','1','38','Zacarias','zc','14');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('39','1','39','Malaquias','ml','4');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('40','2','1','Mateus','mt','28');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('41','2','2','Marcos','mc','16');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('42','2','3','Lucas','lc','24');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('43','2','4','João','jo','21');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('44','2','5','Atos','at','28');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('45','2','6','Romanos','rm','16');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('46','2','7','I Coríntios','1co','16');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('47','2','8','II Coríntios','2co','13');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('48','2','9','Gálatas','gl','6');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('49','2','10','Efésios','ef','6');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('50','2','11','Filipenses','fp','4');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('51','2','12','Colossenses','cl','4');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('52','2','13','I Tessalonicenses','1ts','5');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('53','2','14','II Tessalonicenses','2ts','3');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('54','2','15','I Timóteo','1tm','6');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('55','2','16','II Timóteo','2tm','4');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('56','2','17','Tito','tt','3');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('57','2','18','Filemom','fm','1');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('58','2','19','Hebreus','hb','13');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('59','2','20','Tiago','tg','5');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('60','2','21','I Pedro','1pe','5');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('61','2','22','II Pedro','2pe','3');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('62','2','23','I João','1jo','5');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('63','2','24','II João','2jo','1');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('64','2','25','III Joao','3jo','1');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('65','2','26','Judas','jd','1');
+insert into `books` (`id`, `will_id`, `position`, `name`, `short`, `chapters`) values('66','2','27','Apocalipse','ap','22');

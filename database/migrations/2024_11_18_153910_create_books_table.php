@@ -14,12 +14,12 @@ return new class extends Migration
         if (!Schema::hasTable('books')) {
             Schema::create('books', function (Blueprint $table) {
                 $table->id();
-                $table->tinyInteger("will_id");
+                $table->foreignId("will_id")->references("id")->on("wills")->onDelete("cascade");
                 $table->tinyInteger("position");
                 $table->char("name", 30);
                 $table->char("short", 3);
+                $table->tinyInteger("chapters");
                 
-                $table->foreginId("will_id")->references("id")->on("wills")->onDelete("cascade");
                 
                 $table->timestamps();
             });
@@ -31,11 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table("books", function (Blueprint $table) {
-            $table->dropForeign(["will_id"]);
-            $table->dropColumn("will_id");
-        });
-
         Schema::dropIfExists('books');
     }
 };

@@ -15,7 +15,8 @@ class Books extends Model
         "will_id",
         "position",
         "name",
-        "short"
+        "short",
+        "chapters"
     ];
 
     public function will()
@@ -26,5 +27,15 @@ class Books extends Model
     public function verses()
     {
         return $this->hasMany(Verses::class);
+    }
+
+    public function findByShort($bookRef) 
+    {
+        return $this->where("short", $bookRef)->first();
+    }
+
+    public function getTotalChaptersPerBook($bookId) 
+    {
+        return $this->select('chapters')->where('id', $bookId)->first()->chapters;
     }
 }

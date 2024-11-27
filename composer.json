@@ -29,7 +29,9 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "App\\": "app/",
+            "App\\Services\\": "app/Services/"
         }
     },
     "scripts": {
